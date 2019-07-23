@@ -13,7 +13,7 @@ class Layout extends Component {
 	render() {
 		return (
 			<div className="parent">
-				<div className="child">yo</div>
+				<div className="child"></div>
 			</div>
 		);
 	}
