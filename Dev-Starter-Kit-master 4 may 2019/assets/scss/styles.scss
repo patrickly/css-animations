@@ -43,6 +43,11 @@ h1 {
 .parent {
   background: yellow;
   padding: 50px;
+  &:hover{
+    .child {
+      background: blue;
+    }
+  }
   .child {
     background: black;
     height: 300px;
