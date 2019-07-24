@@ -40,12 +40,21 @@ h1 {
   font-size: 50px;
 }
 
+* {
+  box-sizing: border-box;
+}
 .parent {
   background: yellow;
   padding: 50px;
-  transition: all .5s ease-in-out;
+  width: 100%;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+ // transition: all .5s ease-in-out;
   &:hover{
     background: red;
+    width: 50%;
     .child {
       background: blue;
     }
