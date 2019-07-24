@@ -53,5 +53,6 @@ h1 {
   .child {
     background: black;
     height: 300px;
+    transition: all 2s ease-in-out;
   }
 }
