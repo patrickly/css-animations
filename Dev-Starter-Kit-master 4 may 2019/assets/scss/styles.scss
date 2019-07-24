@@ -51,7 +51,9 @@ h1 {
   // transition-property: all;
   // transition-timing-function: ease-in-out;
   // transition-delay: 0s;
- transition: width .5s ease-in-out;
+ transition: background 1s ease-in-out 1s,
+   width 1s ease-in-out
+   ;
   &:hover{
     background: red;
     width: 50%;
