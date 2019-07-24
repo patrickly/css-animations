@@ -98,7 +98,8 @@ button {
     border: 1px solid #000;
     margin: 0;
     position: relative;
-    ul{
+    ul.first{
+      background: red;
       left: -100px;
       top: 56px;
       position: absolute;
@@ -106,16 +107,28 @@ button {
       width: 200px;
       li {
         display: block;
-             ul{
-              left: 100%;
-              top: -1px;
-              position: absolute;
-              display: block;
-              width: 200px;
-              li {
-                display: block;
-              }
-             }
+      }
+    }
+    ul.second{      
+      background: purple;
+      left: 100%;
+      top: -1px;
+      position: absolute;
+      display: block;
+      width: 200px;
+      li {
+        display: block;
+      }
+    }
+    ul.third{      
+      background: green;
+      left: 100%;
+      top: -1px;
+      position: absolute;
+      display: block;
+      width: 200px;
+      li {
+        display: block;
       }
     }
   }
