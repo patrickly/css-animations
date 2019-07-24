@@ -47,11 +47,11 @@ h1 {
   background: yellow;
   padding: 50px;
   width: 100%;
-  transition-duration: .5s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
- // transition: all .5s ease-in-out;
+  // transition-duration: .5s;
+  // transition-property: all;
+  // transition-timing-function: ease-in-out;
+  // transition-delay: 0s;
+ transition: width .5s ease-in-out;
   &:hover{
     background: red;
     width: 50%;
