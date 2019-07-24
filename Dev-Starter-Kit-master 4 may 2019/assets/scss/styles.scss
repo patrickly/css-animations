@@ -69,10 +69,16 @@ h1 {
 }
 
 button {
-  font-size: 2rem;
-  background: red;
-  transition: all 1s ease;
-  &:hover {
-    background: blue;
-  }
+	background: grey;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 15px 20px;
+	font-size: 1.2rem;
+	transition: background .5s ease-in-out,
+  color .5s ease-in-out;
+	&:hover {
+		background: red;
+		color: white;
+	}
 }
