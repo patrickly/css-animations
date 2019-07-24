@@ -67,3 +67,12 @@ h1 {
     transition: all 2s ease-in-out;
   }
 }
+
+button {
+  font-size: 2rem;
+  background: red;
+  transition: all 1s ease;
+  &:hover {
+    background: blue;
+  }
+}

@@ -12,8 +12,11 @@ class Layout extends Component {
 	async test() {}
 	render() {
 		return (
-			<div className="parent">
-				<div className="child"></div>
+			<div>
+				<div className="parent">
+					<div className="child"></div>
+				</div>
+				<button type="button"> click </button>
 			</div>
 		);
 	}
