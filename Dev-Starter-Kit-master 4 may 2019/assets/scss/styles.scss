@@ -43,7 +43,9 @@ h1 {
 .parent {
   background: yellow;
   padding: 50px;
+  transition: all .5s ease-in-out;
   &:hover{
+    background: red;
     .child {
       background: blue;
     }
