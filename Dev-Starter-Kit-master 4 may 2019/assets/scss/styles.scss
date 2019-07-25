@@ -120,6 +120,12 @@ button {
       transition: all .4s ease-in-out;
       li {
         display: block;
+        &:hover {
+          & > ul.second {
+          visibility: visible;
+          opacity: 1;
+          }
+       }
       }
     }
     ul.second{      
@@ -127,10 +133,18 @@ button {
       left: 100%;
       top: -1px;
       position: absolute;
-      display: none;
+      visibility: hidden;
       width: 200px;
+      opacity: 0;
+      transition: all .4s ease-in-out;
       li {
         display: block;
+          &:hover {
+            & > ul.third {
+            visibility: visible;
+            opacity: 1;
+            }
+         }
       }
     }
     ul.third{      
@@ -138,8 +152,10 @@ button {
       left: 100%;
       top: -1px;
       position: absolute;
-      display: none;
+      visibility: hidden;
       width: 200px;
+      opacity: 0;
+      transition: all .4s ease-in-out;
       li {
         display: block;
       }
