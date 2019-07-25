@@ -13,7 +13,7 @@ class Layout extends Component {
 	render() {
 		return (
 			<div className="parent">
-				<div className="child"></div>
+				<div className="button">Click Me</div>
 				<div className="box"></div>
 			</div>
 		);

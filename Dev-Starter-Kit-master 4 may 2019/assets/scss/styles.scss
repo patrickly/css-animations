@@ -43,32 +43,18 @@ h1 {
 * {
   box-sizing: border-box;
 }
-.parent {
-  background: yellow;
-  padding: 50px;
-  width: 100%;
-  // transition-duration: .5s;
-  // transition-property: all;
-  // transition-timing-function: ease-in-out;
-  // transition-delay: 0s;
- transition: background 1s ease-in-out 1s,
-   width 1s ease-in-out
-   ;
-  &:hover{
-    background: red;
-    width: 50%;
-    .child {
-      background: blue;
-    }
-  }
-  .child {
-    background: black;
-    height: 300px;
-    transition: all 2s ease-in-out;
-  }
-}
 
-button {
+.parent {
+  text-align: center;
+}
+.button {
+ border-radius: 3px;
+ background: red;
+ color: white;
+ display: inline-block;
+ padding: 15px 20px;
+}
+.box {
 
 }
 
