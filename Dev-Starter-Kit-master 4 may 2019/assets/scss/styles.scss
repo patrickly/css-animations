@@ -92,6 +92,7 @@ button {
   margin: 0; 
   background: black;
   color: white;
+  
   li {
     display: inline-block;
     list-style: none;   
@@ -99,13 +100,24 @@ button {
     border: 1px solid #000;
     margin: 0;
     position: relative;
+    transition: all .4s ease-in-out;
+    &:hover {
+      & > ul.first {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    
+    
     ul.first{
       background: red;
       left: -100px;
       top: 56px;
       position: absolute;
-      display: block;
+      visibility: hidden;
       width: 200px;
+      opacity: 0;
+      transition: all .4s ease-in-out;
       li {
         display: block;
       }
@@ -115,7 +127,7 @@ button {
       left: 100%;
       top: -1px;
       position: absolute;
-      display: block;
+      display: none;
       width: 200px;
       li {
         display: block;
@@ -126,7 +138,7 @@ button {
       left: 100%;
       top: -1px;
       position: absolute;
-      display: block;
+      display: none;
       width: 200px;
       li {
         display: block;
