@@ -46,6 +46,7 @@ h1 {
 
 .parent {
   text-align: center;
+  padding: 50px;
 }
 .button {
  border-radius: 3px;
@@ -55,7 +56,9 @@ h1 {
  padding: 15px 20px;
 }
 .box {
-
+  background: black;
+  width: 200px;
+  height: 200px;
 }
 
 
