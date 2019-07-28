@@ -67,6 +67,12 @@ h1 {
   width: 200px;
   height: 200px;
   transition: all .6s ease-in-out;
-  animation-name: moveRight;
+  // animation: moveRight .7s ease-in-out 0 infinite alternate forwards running;
+  // animation: moveRight .7s ease-in-out infinite alternate forwards running;
+  // animation: moveRight .7s ease-in-out 1 alternate forwards running;
+  animation: moveRight .7s ease-in-out 6 alternate forwards running;
+
+
+
 }
 
