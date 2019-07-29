@@ -73,11 +73,9 @@ h1 {
   width: 200px;
   height: 200px;
   transition: all .6s ease-in-out;
-  // animation: moveRight .7s ease-in-out 0 infinite alternate forwards running;
-  // animation: moveRight .7s ease-in-out infinite alternate forwards running;
-  // animation: moveRight .7s ease-in-out 1 alternate forwards running;
-  // animation: moveRight 1s ease-in-out infinite alternate-reverse forwards running;
-  animation: moveRight 1s ease-in-out 1 forwards running;
+  // animation-name animation-duration animation-timing-function animation-delay 
+  // animation-iteration-count animation-direction animation-fill-mode and animation-play-state.
+  animation: moveRight 1s cubic-bezier(1,1.02,.01,.78) infinite forwards;
 
 
 
