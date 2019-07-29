@@ -14,7 +14,7 @@ class Layout extends Component {
 		return (
 			<div className="parent">
 				<div className="button">Click Me</div>
-				<div className="box"></div>
+				<div className="box fadeInTop"></div>
 			</div>
 		);
 	}

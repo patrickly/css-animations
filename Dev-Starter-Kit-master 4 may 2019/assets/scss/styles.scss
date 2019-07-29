@@ -45,15 +45,44 @@ h1 {
 }
 
 
-@keyframes moveRight {
-  0% { background: black;
+@keyframes fadeInLeft {
+  0% { 
     opacity: 0;
-    transform: translate3d(500px,0,0); 
+    transform: translate3d(-100px,0,0); 
   }
   100% { 
     opacity: 1;
-    background: red;
-    transform: translate3d(500px,200px,0); 
+    transform: translate3d(0,0,0); 
+  }
+}
+@keyframes fadeInTop {
+  0% { 
+    opacity: 0;
+    transform: translate3d(0,-100px,0); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translate3d(0,0,0); 
+  }
+}
+@keyframes fadeInRight {
+  0% { 
+    opacity: 0;
+    transform: translate3d(100px,0,0); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translate3d(0,0,0); 
+  }
+}
+@keyframes fadeInBottom {
+  0% { 
+    opacity: 0;
+    transform: translate3d(0,100px,0); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translate3d(0,0,0); 
   }
 }
 
@@ -67,18 +96,36 @@ h1 {
  color: white;
  display: inline-block;
  padding: 15px 20px;
+ margin-bottom: 100px;
 }
 .box {
+  margin: 0 auto;
   background: black;
   width: 200px;
   height: 200px;
   transition: all .6s ease-in-out;
   // animation-name animation-duration animation-timing-function animation-delay 
   // animation-iteration-count animation-direction animation-fill-mode and animation-play-state.
-  animation: moveRight 1s cubic-bezier(1,1.02,.01,.78) infinite forwards;
+  // animation: fadeInTop 1s ease-in-out 1 alternate forwards;
+  // animation: fadeInLeft 1s ease-in-out 1 alternate forwards;
+  // animation: fadeInRight 1s ease-in-out 2 alternate forwards;
+  // animation: fadeInBottom 1s ease-in-out 2 alternate forwards;
 
 
 
 
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s ease-in-out 2 alternate forwards;
+}
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-in-out 2 alternate forwards;
+}
+.fadeInBottom {
+  animation: fadeInBottom 1s ease-in-out 2 alternate forwards;
+}
+.fadeInTop {
+  animation: fadeInTop 1s ease-in-out 2 alternate forwards;
 }
 
